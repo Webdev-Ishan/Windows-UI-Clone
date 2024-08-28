@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and viewport configuration -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
-    <title>Windows 11 using(HTML, CSS, JavaScript)</title>
+    
+    <!-- Page title -->
+    <title>Windows 11 using (HTML, CSS, JavaScript)</title>
 </head>
 <body>
+    <!-- Desktop area where icons are displayed -->
     <div class="desktop">
+        <!-- First icon representing Google Chrome with a link to Google's homepage -->
         <div id="first">
-        <img src="chromeicon.png" alt="loading" id="chrome">
-        <a href="https://www.google.co.in/">  Chrome</a>
+            <img src="chromeicon.png" alt="loading" id="chrome">
+            <a href="https://www.google.co.in/">Chrome</a>
+        </div>
+
+        <!-- Second icon representing Microsoft Edge with a link to the download page -->
+        <div id="second">
+            <img src="edgeicon.png" alt="loading" id="edge">
+            <a href="https://microsoft-edge.en.softonic.com/?ex=RAMP-2046.2">Microsoft Edge</a>
+        </div>
+
+        <!-- Third icon representing Recycle Bin without a link -->
+        <div id="third">
+            <img src="recyclebinicon.png" alt="loading" id="bin">
+            <span>Recycle Bin</span>
+        </div>
     </div>
 
-    <div id="second">
-        <img src="edgeicon.png" alt="loading" id="edge">
-        <a href="https://microsoft-edge.en.softonic.com/?ex=RAMP-2046.2">Microsoft edge</a>
-    </div>
-
-    <div id="third">
-        <img src="recyclebinicon.png" alt="loading" id="bin">
-        <span>Recycle Bin</span>
-       
-    </div>
-    
-    </div>
-
+    <!-- Separate section for the Recycle Bin icon (could be used for a full-screen bin view) -->
     <div class="recycle">
         <img src="recycle.png" alt="loading">
     </div>
 
+    <!-- Taskbar section at the bottom of the screen -->
     <div class="task-bar">
-        <img src="icons.PNG" alt="taskbar is loading" id="taskbar"> 
+        <!-- Icons on the left side of the taskbar -->
+        <img src="icons.PNG" alt="taskbar is loading" id="taskbar">
+        
+        <!-- Icons on the right side of the taskbar (network, battery, etc.) -->
         <img src="taskbarright.PNG" alt="networking issue">
     </div>
 
+    <!-- Start menu section that appears when the Start button is clicked -->
     <div class="startmenu">
         <img src="startmenu.PNG" alt="loading">
     </div>
 </body>
+<!-- Link to external JavaScript file -->
 <script src="script.js"></script>
 </html>
