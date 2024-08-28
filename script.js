@@ -1,31 +1,31 @@
+// Selecting the taskbar and start menu elements from the DOM
+const taskbar = document.getElementsByClassName('task-bar')[0];
+const startmenu = document.getElementsByClassName('startmenu')[0];
 
+// Adding a click event listener to the taskbar
+taskbar.addEventListener('click', () => {
+    // Check the current position of the start menu
+    if (startmenu.style.bottom === "50px") {
+        // If the start menu is open, close it by moving it off-screen
+        startmenu.style.bottom = "-650px";
+    } else {
+        // If the start menu is closed, open it by moving it to the visible position
+        startmenu.style.bottom = "50px";
+    }
+});
 
+// Selecting the Recycle Bin icon and the full Recycle Bin view from the DOM
+const bin = document.getElementById('bin');
+const recycle = document.getElementsByClassName('recycle')[0];
 
-const taskbar= document.getElementsByClassName('task-bar')[0];
-const startmenu= document.getElementsByClassName('startmenu')[0];
-
-taskbar.addEventListener('click', ()=>{
-
-if(startmenu.style.bottom==="50px"){
-startmenu.style.bottom= "-650px";
-}
-else{
-    startmenu.style.bottom="50px";
-}
-
-})
-
-
-const bin= document.getElementById('bin');
-const recycle=document.getElementsByClassName('recycle')[0];
-
-bin.addEventListener('click',()=>{
-
-if(recycle.style.bottom==="-1050px"){
-    recycle.style.bottom= "-200px";
-}
-
-else{
-    recycle.style.bottom="-1050px";
-}
-})
+// Adding a click event listener to the Recycle Bin icon
+bin.addEventListener('click', () => {
+    // Check the current position of the Recycle Bin view
+    if (recycle.style.bottom === "-1050px") {
+        // If the Recycle Bin is closed, open it by moving it to a visible position
+        recycle.style.bottom = "-200px";
+    } else {
+        // If the Recycle Bin is open, close it by moving it off-screen
+        recycle.style.bottom = "-1050px";
+    }
+});
