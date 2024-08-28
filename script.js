@@ -20,12 +20,14 @@ const recycle = document.getElementsByClassName('recycle')[0];
 
 // Adding a click event listener to the Recycle Bin icon
 bin.addEventListener('click', () => {
-    // Check the current position of the Recycle Bin view
-    if (recycle.style.bottom === "-1050px") {
+    
         // If the Recycle Bin is closed, open it by moving it to a visible position
         recycle.style.bottom = "-200px";
-    } else {
-        // If the Recycle Bin is open, close it by moving it off-screen
-        recycle.style.bottom = "-1050px";
-    }
+    
 });
+
+
+recycle.addEventListener('click',()=>{
+
+    recycle.style.bottom="-1050px"
+})
