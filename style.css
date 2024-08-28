@@ -110,3 +110,22 @@ span{
     padding-left: 20px;
    transform: all 0.8s ease-in;
    }
+
+   #fourth{
+    width: 25%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+   #utube{
+    top: 15px;
+    width: 60px;
+    height: 45px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
